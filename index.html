@@ -80,6 +80,11 @@ section{padding:88px 0}
 .sec-head h2{font-size:clamp(34px,5vw,52px);color:var(--blue)}
 .sec-head p{max-width:440px;color:var(--muted)}
 
+/* reel */
+.reel{padding-bottom:40px}
+.reel-frame{border-radius:8px;overflow:hidden;border:6px solid #fff;box-shadow:0 18px 40px rgba(23,22,61,.18);background:var(--blue);aspect-ratio:16/9}
+.reel-frame video{width:100%;height:100%;display:block;object-fit:cover}
+
 /* services */
 .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
 .svc{background:#fff;border:1px solid var(--line);padding:26px;border-radius:6px;border-top:4px solid var(--blue);transition:transform .15s,box-shadow .15s}
@@ -215,6 +220,18 @@ footer img{height:46px;width:auto}
   </div>
 </div>
 
+<section id="reel" class="reel">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><div class="eyebrow">On the floor</div><h2>A day in the chair</h2></div>
+      <p>Tynia, Peter and Amy at work. Old-timers, fresh fades and first cuts, all under one roof.</p>
+    </div>
+    <div class="reel-frame">
+      <video src="img/cuts-reel.mp4" poster="img/cuts-reel-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Animated clip of Tynia, Peter and Amy cutting hair in the shop"></video>
+    </div>
+  </div>
+</section>
+
 <section id="services">
   <div class="wrap">
     <div class="sec-head">
@@ -259,7 +276,7 @@ footer img{height:46px;width:auto}
       <h2 style="font-size:clamp(34px,5vw,52px);color:var(--blue)">Friendly faces,<br>steady hands</h2>
       <p class="intro" style="margin-top:14px">Barbers and hairdressers working side by side, so whoever's free can get you sorted.</p>
       <ul class="crew">
-        <li><b>Tyne</b><span>Owner · Barber &amp; Hairdresser</span></li>
+        <li><b>Tynia</b><span>Owner · Barber &amp; Hairdresser</span></li>
         <li><b>Peter</b><span>Skin Fade Specialist</span></li>
         <li><b>Viktoriia</b><span>Barber</span></li>
         <li><b>Mia</b><span>Hairdresser</span></li>
@@ -297,7 +314,7 @@ footer img{height:46px;width:auto}
             </select></div>
           <div class="field"><label for="barber">Barber</label>
             <select id="barber" name="barber">
-              <option>No preference</option><option>Tyne</option><option>Peter</option><option>Viktoriia</option>
+              <option>No preference</option><option>Tynia</option><option>Peter</option><option>Viktoriia</option>
               <option>Mia</option><option>Jennifer</option><option>Jarna</option><option>Amy</option>
             </select></div>
         </div>
